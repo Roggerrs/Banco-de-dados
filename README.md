@@ -1,6 +1,6 @@
-# 📚 Estudos de Banco de Dados — Baseado no livro de Carlos Alberto Ferreira de Oliveira
+# 📚 Estudos de Banco de Dados — Baseado no livro de Carlos Alberto
 
-Este repositório reúne os projetos desenvolvidos por mim durante o estudo do livro **"Projeto de Banco de Dados"** de **Carlos Alberto Ferreira de Oliveira**, referência nacional em modelagem de dados e engenharia de banco de dados. Os exercícios e cenários aqui implementados seguem os exemplos, estudos de caso e propostas práticas apresentadas ao longo da obra.
+Este repositório reúne os projetos desenvolvidos por mim durante o estudo do livro **"Projeto de Banco de Dados"** de **Carlos Alberto**, referência nacional em modelagem de dados e engenharia de banco de dados. Os exercícios e cenários aqui implementados seguem os exemplos, estudos de caso e propostas práticas apresentadas ao longo da obra.
 
 ## 🎯 Objetivo do Repositório
 
@@ -12,7 +12,7 @@ Este repositório reúne os projetos desenvolvidos por mim durante o estudo do l
 ## 📘 Sobre o livro
 
 > **Título:** Projeto de Banco de Dados  
-> **Autor:** Carlos Alberto Ferreira de Oliveira  
+> **Autor:** Carlos Alberto 
 
 O livro aborda desde os fundamentos da modelagem conceitual até a implementação física em SGBDs, com foco em boas práticas, normalização, integridade dos dados e uso de diagramas ER.
 
