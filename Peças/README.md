@@ -26,6 +26,11 @@ CORREDOR (1) --------< (N) RECEPTACULO
 * Cada linha na tabela **Estoque** pertence a **um único Receptáculo**.
 * Um **Receptáculo** pode conter **diferentes peças**, cada uma registrada como uma linha na tabela Estoque.
 
+**Atributos importantes nesta relação:**
+
+* **ID_RECEPTACULO** — referência ao receptáculo.
+* **QUANTIDADE** — indica quantas unidades de determinada peça estão naquele receptáculo.
+
 **Resumo:**
 
 ```
@@ -39,13 +44,29 @@ RECEPTACULO (1) --------< (N) ESTOQUE
 **Uma peça pode estar armazenada em diversos receptáculos.**
 
 * Cada linha na tabela **Estoque** se refere a **uma única Peça**.
-* Uma **Peça** pode aparecer em **vários Receptáculos**.
+* Uma **Peça** pode aparecer em **vários Receptáculos**, cada um com sua própria quantidade.
 
 **Resumo:**
 
 ```
 PECA (1) --------< (N) ESTOQUE
 ```
+
+---
+
+## 🔹 Atributo Quantidade
+
+O atributo **`QUANTIDADE`** pertence à tabela **ESTOQUE**, pois ela representa:
+
+✔ qual peça
+✔ está em qual receptáculo
+✔ **e em que quantidade**
+
+Exemplo de linha na tabela ESTOQUE:
+
+| ID_ESTOQUE | ID_PECA | ID_RECEPTACULO | QUANTIDADE |
+| ---------- | ------- | -------------- | ---------- |
+| 15         | 3       | 12             | 27         |
 
 ---
 
@@ -63,20 +84,26 @@ RECEPTACULO (N)
      | 1:N
      |
 ESTOQUE (N) >-------- 1 (PECA)
+        |
+        |-- QUANTIDADE
 ```
 
 * **Corredor** organiza a estrutura física.
 * **Receptáculo** identifica uma posição dentro do corredor.
 * **Peça** representa o item armazenado.
-* **Estoque** é a associação que indica *qual peça está em qual receptáculo*, com a quantidade.
+* **Estoque** registra *qual peça está em qual receptáculo*, com a **quantidade correspondente**.
 
 ---
 
 ## ✔ Conclusão
 
-O modelo utiliza cardinalidades simples e diretas, focadas em organização física e armazenamento. A tabela **ESTOQUE** funciona como ligação entre **PEÇA** e **RECEPTÁCULO**, permitindo que:
+O modelo utiliza cardinalidades simples e diretas, focadas em organização física e armazenamento.
+A tabela **ESTOQUE** funciona como ligação entre **PEÇA** e **RECEPTÁCULO**, permitindo:
 
-* uma peça esteja em vários receptáculos, e
-* um receptáculo armazene várias peças diferentes.
+* uma peça estar em vários receptáculos,
+* um receptáculo armazenar vários tipos de peças,
+* controlar **quantidades independentes** por local.
 
-Pronto para usar no GitHub!
+
+
+
